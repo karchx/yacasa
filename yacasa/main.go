@@ -1,7 +1,15 @@
 package main
 
-import "github.com/karchx/yacasa/cmd"
+import (
+	"net/http"
+
+	"github.com/gorilla/mux"
+)
 
 func main() {
-	cmd.Execute()
+	r := mux.NewRouter()
+	r.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
+		RenderPage(req, w, Index)
+	})
+
 }
