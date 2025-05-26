@@ -1,4 +1,4 @@
 # Yacasa
 
 ## Diagram
-![Diagram]('./docs/diagram.png')
+![Diagram](./docs/diagram.png)
